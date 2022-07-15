@@ -125,7 +125,7 @@
             </div>
         </div>
     </section>
- 
+    
     <!-- Basic features section-->
     <section class="bg-light">
         <div class="container px-5">
@@ -143,17 +143,26 @@
             </div>
         </div>
     </section>
+    
+    
     <!-- Call to action section-->
+    <section class="cta">
+        <div class="cta-content">
+            <div class="container px-5">
+                <h2 class="text-white display-1 lh-1 mb-4">
+                    
+                    Start building.
+                </h2>
+                <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age"
+                    target="_blank">Download for free</a>
+            </div>
+        </div>
+    </section>
 
     <!-- App features section-->
     <section id="features">
         <div class="container px-5">
-            <div class="row gx-5 align-items-center">
-                <div class="col-lg-20 order-lg-1 mb-5 mb-lg-0">
-                    <div class="container-fluid px-5">
-                        <div class="row gx-3">
-                            <div class="col-md-6 mb-5">
-                               
+            <div class="row gx-1 align-items-center">    
                                 <!-- Feature item-->
                                 <div class="card-group">
                                     <div class="card">
@@ -178,6 +187,28 @@
                                             <a href="#" class="btn btn-primary">Expreiencia</a>
                                         </div>
                                     </div>
+                                    <!-- Feature item-->
+                                    <div class="card">
+                                        <img src="daniela-kreimer.jpg" class="card-img-top" width="80"
+                                            height="350" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">usuria de app</h5>
+                                            <p class="card-text">This card has supporting text below as a natural
+                                                lead-in to additional content.</p>
+                                            <a href="#" class="btn btn-primary">Expreiencia</a>
+                                        </div>
+                                    </div>
+                                    <!-- Feature item-->
+                                    <div class="card">
+                                        <img src="personas-que-sonrie.webp" class="card-img-top" width="80"
+                                            height="350" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">usuria de app</h5>
+                                            <p class="card-text">This card has supporting text below as a natural
+                                                lead-in to additional content.</p>
+                                            <a href="#" class="btn btn-primary">Expreiencia</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -187,31 +218,65 @@
         </div>|
     </section>
 
-   
-    <section class="cta">
-        <div class="cta-content">
-            <div class="container px-5">
-                <h2 class="text-white display-1 lh-1 mb-4">
-                    Stop waiting.
-                    <br />
-                    Start building.
-                </h2>
-                <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age"
-                    target="_blank">Download for free</a>
-            </div>
-        </div>
+    <!--subscription for more information-->
+    <section class="text-center bg-gradient-primary-to-secondary">
+        <div class="footer-block-title active" data-content-type="text" data-appearance="default" data-element="main" style="border-style: none; border-width: 1px; border-radius: 0px; margin: 0px 0px 10px; padding: 0px;"><p><strong><span style="line-height: 32px; font-size: 18px;"><span style="color: #ffffff;">Suscribete</span></span></strong></p></div><div data-content-type="text" data-appearance="default" data-element="main" style="border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 0px;"><p><span style="color: #ffffff;">e enfórmate de nuestra app</span></p>
+        <p><span style="color: #ffffff;"> </span></p><div class="block newsletter"><div class="title"><strong>Datos</strong></div><div class="content"><form method="post" action="..." class="form_subscribe"><input name="EMAIL_ADDRESS_" placeholder="Email"><br><input type="hidden" name="EMAIL_PERMISSION_STATUS_" value="I"><input type="hidden" name="NOMBRE_FORMULARIO" value="INSCRIPCION_NUEVOSITIO"><input type="hidden" name="FORM_SUBMIT_DATE" value=""><input type="hidden" name="_ri_" value="X0Gzc2X%3DAQpglLjHJlDQGiHltzfza7dJXzfcHzbU1SczasNzgIRLsRp2FNzenVwjpnpgHlpgneHmgJoXX0Gzc2X%3DAQpglLjHJlDQGobzcPeGSjUXhP700wHBD5q51E8NmlzeEzgzbn"><input type="hidden" name="_di_" value="kiobjdj70j5ouo40epe0jqe5oal1uvh81tv35fjk004a9ueqsh5g"><input type="submit" action="submit" value="Suscribirse" class="action subscribe primary"></form><div class="newsletter-message success" style="display:none;"></div></div></div><!-- <script type="text/javascript">
+            require([
+                'jquery',
+                "mage/mage",
+                "mage/validation"
+            ], function ($) {
+                "use strict";
+        
+                $('.form_subscribe').submit( function (event) {
+        
+                    event.preventDefault();
+                    
+                    const actionForm = $(this).attr('action');
+                    let email_address = $('input[name=EMAIL_ADDRESS_]').val();
+                    let email_permission = $('input[name=EMAIL_PERMISSION_STATUS_]').val();
+                    let nombre_formulario = $('input[name=NOMBRE_FORMULARIO]').val();
+                    let form_submit = $('input[name=FORM_SUBMIT_DATE]').val();
+                    let ri = $('input[name=_ri_]').val();
+                    let di = $('input[name=_di_]').val();
+        
+                    $.ajax({
+                        url : actionForm,
+                        data : { 
+                            EMAIL_ADDRESS_ : email_address,
+                            EMAIL_PERMISSION_STATUS_: email_permission,
+                            NOMBRE_FORMULARIO : nombre_formulario,
+                            FORM_SUBMIT_DATE : form_submit,
+                            _ri_ : ri,
+                            _di_ : di
+                        },
+                        type : 'POST',
+                        success : function() {
+                            $('.form_subscribe').hide();
+                            $('.newsletter-message success').show();
+                        },
+                        error : function(xhr, status, data) {
+                            console.log(data);
+                        }
+                    }); 
+        
+                });
+            });</script>--><p></p></div><div class="follow-us-box" data-content-type="text" data-appearance="default" data-element="main" style="border-style: none; border-width: 1px; border-radius: 0px; display: none; margin: 0px; padding: 0px;"><p><span style="font-size: 18px; color: #ffffff;">Síguenos</span></p>
+        <p><a tabindex="0" href="https://www.facebook.com/abcdincl?home_preFooter" target="_blank" rel="noopener"><img id="TXQQUWS" style="width: 37px; height: 37px;" src="https://www.abcdin.cl/media/wysiwyg/fb.png" alt="" width="37" height="37"></a>&nbsp; &nbsp; <a tabindex="0" href="https://www.instagram.com/abcdincl/?hl=es-la?home_preFooter" target="_blank" rel="noopener"><img style="width: 37px; height: 37px;" src="https://www.abcdin.cl/media/wysiwyg/ig.png" alt="" width="37" height="3">&nbsp;&nbsp;</a> &nbsp;<a tabindex="0" href="https://www.youtube.com/user/abecedin?home_preFooter=" target="_blank" rel="noopener"><img style="width: 37px; height: 37px;" src="https://www.abcdin.cl/media/wysiwyg/yt.png" alt="" width="37" height="37"></a></p></div><div class="follow-us-box" data-content-type="html" data-appearance="default" data-element="main" style="border-style: none; border-width: 1px; border-radius: 0px; margin: 0px; padding: 0px;" data-decoded="true"><p><span style="font-size: 18px; color: #ffffff;">Síguenos</span></p>
+        <p>
+            <a class="btnFooter-click" tabindex="0" href="https://www.facebook.com/" target="_blank" rel="noopener" data-footer="Facebook">
+                <img id="TXQQUWS" style="width: 37px; height: 37px;" src="https://www.abcdin.cl/media/wysiwyg/fb.png" alt="" width="37" height="37">
+            </a>
+            &nbsp;&nbsp;&nbsp; 
+            <a class="btnFooter-click" tabindex="0" href="https://www.instagram.com/" target="_blank" rel="noopener" data-footer="Instagram">
+                <img style="width: 37px; height: 37px;" src="https://www.abcdin.cl/media/wysiwyg/ig.png" alt="" width="37" height="3">
+            </a>
+            &nbsp;&nbsp;&nbsp;
+            <a class="btnFooter-click" tabindex="0" href="https://www.youtube.com/" target="_blank" rel="noopener" data-footer="Youtube">
+                <img style="width: 37px; height: 37px;" src="https://www.abcdin.cl/media/wysiwyg/yt.png" alt="" width="37" height="37">
     </section>
-    <!-- App badge section-->
-    <section class="bg-gradient-primary-to-secondary" id="download">
-        <div class="container px-5">
-            <h2 class="text-center text-white font-alt mb-4">Get the app now!</h2>
-            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-                <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg"
-                        alt="..." /></a>
-                <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
-            </div>
-        </div>
-    </section>
+
     <!-- Footer-->
     <footer class="bg-black text-center py-5">
         <div class="container px-5">
@@ -225,6 +290,7 @@
             </div>
         </div>
     </footer>
+
     <!-- Feedback Modal-->
     <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
